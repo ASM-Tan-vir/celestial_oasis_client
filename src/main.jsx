@@ -9,6 +9,7 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import MyBookings from "./pages/MyBookings";
 import { AuthContextProvider } from "./context/AuthContext";
+import RoomsDetails from "./pages/RoomsDetails";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/rooms",
         element: <Rooms></Rooms>,
+        loader: async () => {
+          const response = await fetch("http://localhost:5000/services");
+          const data = await response.json();
+          return data;
+        },
       },
       {
         path: "/sign_in",
@@ -32,12 +38,14 @@ const router = createBrowserRouter([
         element: <SignUp></SignUp>,
       },
       {
-        path: "/my_booKings",
+        path: "/my_bookings",
         element: <MyBookings></MyBookings>,
       },
       {
-        path: "/rooms",
-        element: <Rooms></Rooms>,
+        path: "/rooms_details/:id",
+        element: <RoomsDetails></RoomsDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/services/${params.id}`),
       },
     ],
   },

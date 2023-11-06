@@ -12,7 +12,7 @@ const SignOutBtn = () => {
   };
   return (
     <button
-      className="btn  bg-white hover:bg-slate-50 text-[#E17509]"
+      className=" px-4 rounded-lg h-10 bg-white hover:bg-slate-50 text-[#4B0082] font-semibold"
       onClick={handleSignOut}
     >
       sign Out

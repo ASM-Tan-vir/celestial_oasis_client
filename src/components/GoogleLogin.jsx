@@ -28,7 +28,7 @@ const GoogleLogin = () => {
       <button
         disabled={loading}
         onClick={handleGoogleSignIn}
-        className="btn btn-primary bg-[#E17509] hover:bg-white hover:text-black w-full"
+        className="btn btn-primary bg-gradient-to-l from-[#9370DB] to-[#ffc0cb] hover:bg-white hover:text-[#4B0082] w-full"
       >
         {buttonLabel}
       </button>

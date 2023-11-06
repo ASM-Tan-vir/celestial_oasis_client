@@ -11,7 +11,7 @@ const NavBar = () => {
     <>
       <li>
         <Link
-          className="bg-white hover:bg-slate-50 text-[#E17509] font-semibold mr-2"
+          className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
           to="/"
         >
           Home
@@ -20,7 +20,7 @@ const NavBar = () => {
       {user?.email && (
         <li>
           <Link
-            className="bg-white hover:bg-slate-50 text-[#E17509] font-semibold mr-2"
+            className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
             to="/my_bookings"
           >
             Bookings
@@ -29,7 +29,7 @@ const NavBar = () => {
       )}
       <li>
         <Link
-          className="bg-white hover:bg-slate-50 text-[#E17509] font-semibold mr-2"
+          className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
           to="/rooms"
         >
           Rooms
@@ -37,7 +37,7 @@ const NavBar = () => {
       </li>
       <li>
         <Link
-          className="bg-white hover:bg-slate-50 text-[#E17509] font-semibold mr-2"
+          className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
           to="/sign_in"
         >
           Sign In
@@ -45,7 +45,7 @@ const NavBar = () => {
       </li>
       <li>
         <Link
-          className="bg-white hover:bg-slate-50 text-[#E17509] font-semibold mr-2"
+          className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
           to="/sign_up"
         >
           SignUp
@@ -55,7 +55,7 @@ const NavBar = () => {
   );
 
   return (
-    <div className="navbar bg-[#E17509] h-14 rounded-md">
+    <div className="navbar  bg-transparent  rounded-md">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -76,13 +76,13 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content  z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             {navLinks}
           </ul>
         </div>
-        <Link className=" rounded-full normal-case text-xl" to="/">
-          <img className="h-10 rounded-full" src={logo} alt="Logo" />
+        <Link className="   text-xl" to="/">
+          <img className="w-full h-20" src={logo} alt="Logo" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

@@ -37,13 +37,13 @@ const SignIn = () => {
     }
   };
   return (
-    <div>
+    <div className=" ">
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
-          <div className=" mr-16 w-1/2">
+          <div className=" mr-16 w-1/2 bg-transparent">
             <img src={img} alt="" />
           </div>
-          <div className="card flex-shrink-0 w-1/2 max-w-sm shadow-2xl bg-base-100">
+          <div className="card flex-shrink-0 w-1/2 max-w-sm shadow-2xl bg-transparent">
             <form onSubmit={handleLogIn} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -76,7 +76,7 @@ const SignIn = () => {
               </div>
               <div className="form-control mt-6">
                 <input
-                  className="btn btn-primary bg-[#E17509] hover:bg-white hover:text-black"
+                  className="btn btn-primary bg-gradient-to-r from-[#9370DB] to-[#ffc0cb] hover:bg-white hover:text-[#4B0082]"
                   type="submit"
                   value="Login"
                 />
@@ -85,7 +85,7 @@ const SignIn = () => {
             </form>
             <p className="text-center">
               New to Car doctor ?{" "}
-              <Link className="text-[#E17509] font-bold" to="/sign_up">
+              <Link className="text-[#4B0082] font-bold" to="/sign_up">
                 Sign Up
               </Link>{" "}
             </p>

@@ -1,0 +1,418 @@
+[
+    {
+      "room_id": 1,
+      "room_type": "Standard Room",
+      "image": "https://i.ibb.co/kgxnhsG/download-4.jpg",
+      "description": "A comfortable room with essential amenities for a pleasant stay.",
+      "price_per_night": 100,
+      "room_size": "250 sq ft",
+      "availability": true,
+      "room_images": [
+        "image_url_1.jpg",
+        "image_url_2.jpg",
+        "image_url_3.jpg"
+      ],
+      "special_offers": [
+        {
+          "offer_id": 1,
+          "offer_title": "Early Bird Discount",
+          "discount_percentage": 10,
+          "valid_until": "2023-12-31"
+        },
+        {
+          "offer_id": 2,
+          "offer_title": "Stay 3 Nights, Pay for 2",
+          "discount_percentage": 33.33,
+          "valid_until": "2023-11-30"
+        }
+      ],
+      "reviews": [
+        {
+          "user": "Guest123",
+          "rating": 4.5,
+          "comment": "Enjoyed my stay, clean and comfortable room."
+        },
+        {
+          "user": "Traveler456",
+          "rating": 3.8,
+          "comment": "Decent room, but could use some improvement in service."
+        }
+      ]
+    },
+    {
+      "room_id": 2,
+      "room_type": "Deluxe Suite",
+      "image": "https://i.ibb.co/nMtpFGX/download-5.jpg",
+      "description": "Spacious suite with a separate living area and a beautiful view.",
+      "price_per_night": 200,
+      "room_size": "500 sq ft",
+      "availability": false,
+      "room_images": [
+        "image_url_4.jpg",
+        "image_url_5.jpg",
+        "image_url_6.jpg"
+      ],
+      "special_offers": [
+        {
+          "offer_id": 3,
+          "offer_title": "Weekend Getaway",
+          "discount_percentage": 15,
+          "valid_until": "2023-11-15"
+        }
+      ],
+      "reviews": [
+        {
+          "user": "LuxuryLover",
+          "rating": 4.8,
+          "comment": "Absolutely loved the deluxe suite, worth the price."
+        },
+        {
+          "user": "Explorer789",
+          "rating": 4.0,
+          "comment": "Great room, but availability is limited."
+        }
+      ]
+    },
+    {
+        "room_id": 3,
+        "room_type": "Executive Room",
+        "image": "https://i.ibb.co/XkB5QTy/download-6.jpg",
+        "description": "A stylish room designed for business travelers with modern amenities.",
+        "price_per_night": 150,
+        "room_size": "300 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_7.jpg",
+          "image_url_8.jpg",
+          "image_url_9.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 4,
+            "offer_title": "Business Travel Special",
+            "discount_percentage": 20,
+            "valid_until": "2023-12-15"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "BusinessPro123",
+            "rating": 4.2,
+            "comment": "Perfect room for my work trips, great amenities."
+          },
+          {
+            "user": "GlobeTrotter",
+            "rating": 3.5,
+            "comment": "Decent room, but could have more business-oriented features."
+          }
+        ]
+      },
+      {
+        "room_id": 4,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/gTSVV6Q/download-7.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      },
+      {
+        "room_id": 5,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/k0mc1Qh/download-8.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      },
+      
+      {
+        "room_id": 6,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/BwNqzmF/download-11.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      },
+      {
+        "room_id": 7,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/hF82WfW/download-9.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      },
+      {
+        "room_id": 8,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/hRy4X4t/images-1.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      },
+      {
+        "room_id": 9,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/hFVK9K2/offers-room-berjaya-times-square-hotel-kuala-lumpur.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      },
+      {
+        "room_id": 10,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/t26D5W2/download-10.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      },
+      {
+        "room_id": 11,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/jrW5hQZ/download-14.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      },
+      {
+        "room_id": 12,
+        "room_type": "Family Suite",
+        "image": "https://i.ibb.co/Jm2shdZ/download-13.jpg",
+        "description": "Spacious suite designed for families, featuring a separate kids' area.",
+        "price_per_night": 180,
+        "room_size": "550 sq ft",
+        "availability": true,
+        "room_images": [
+          "image_url_10.jpg",
+          "image_url_11.jpg",
+          "image_url_12.jpg"
+        ],
+        "special_offers": [
+          {
+            "offer_id": 5,
+            "offer_title": "Family Fun Package",
+            "discount_percentage": 25,
+            "valid_until": "2023-12-31"
+          }
+        ],
+        "reviews": [
+          {
+            "user": "FamilyAdventures",
+            "rating": 4.6,
+            "comment": "Perfect for a family getaway, spacious and comfortable."
+          },
+          {
+            "user": "BusyMom",
+            "rating": 4.0,
+            "comment": "Great family suite, kids loved the separate play area."
+          }
+        ]
+      }
+
+  ]
