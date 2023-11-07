@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const QuicAccess = ({ data }) => {
-  const { _id, reviews, image } = data;
+  const { _id, image } = data;
   return (
     <div>
       <Link to={`/book/${_id}`}>

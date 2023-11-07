@@ -8,10 +8,16 @@ import img4 from "../assets/slider4.jpg";
 import img5 from "../assets/slider5.jpg";
 import { useLoaderData } from "react-router-dom";
 import QuicAccess from "../components/QuicAccess";
+import Review from "../components/Review";
+import { useState } from "react";
 
 const Home = () => {
   const [sliderRef] = useKeenSlider();
   const datas = useLoaderData();
+
+  const [showAllReviews, setShowAllReviews] = useState(false);
+
+  const limitedReviews = showAllReviews ? datas : datas.slice(0, 4);
 
   return (
     <div>
@@ -96,6 +102,25 @@ const Home = () => {
             <QuicAccess key={datas._id} data={data}></QuicAccess>
           ))}
         </div>
+      </div>
+      <div>
+        <h2 className="text-2xl font-semibold text-center text-[#4B0082] my-5">
+          Users Testimonial
+        </h2>
+        <div className="grid grid-cols-2">
+          {limitedReviews.map((review) => (
+            <Review key={review._id} review={review}></Review>
+          ))}
+        </div>
+
+        {datas.length > 6 && (
+          <button
+            className="bg-gradient-to-l from-[#9370DB] to-[#ffc0cb] hover:bg-gradient-to-r from-[#ffc0cb] to-[#8f65e3] transition duration-200 text-white flex mx-auto px-4 py-2 rounded-md mt-5"
+            onClick={() => setShowAllReviews(!showAllReviews)}
+          >
+            {showAllReviews ? "Show less reviews" : "Show more reviews"}
+          </button>
+        )}
       </div>
     </div>
   );
