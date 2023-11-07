@@ -17,6 +17,14 @@ const NavBar = () => {
           Home
         </Link>
       </li>
+      <li>
+        <Link
+          className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
+          to="/rooms"
+        >
+          Rooms
+        </Link>
+      </li>
       {user?.email && (
         <li>
           <Link
@@ -27,14 +35,7 @@ const NavBar = () => {
           </Link>
         </li>
       )}
-      <li>
-        <Link
-          className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
-          to="/rooms"
-        >
-          Rooms
-        </Link>
-      </li>
+
       <li>
         <Link
           className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"

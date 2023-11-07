@@ -17,7 +17,7 @@ const Home = () => {
 
   const [showAllReviews, setShowAllReviews] = useState(false);
 
-  const limitedReviews = showAllReviews ? datas : datas.slice(0, 4);
+  const limitedReviews = showAllReviews ? datas : datas.slice(0, 2);
 
   return (
     <div>
@@ -99,7 +99,7 @@ const Home = () => {
       <div className="flex justify-center mx-auto ">
         <div className="grid grid-cols-4 gap-5">
           {datas.map((data) => (
-            <QuicAccess key={datas._id} data={data}></QuicAccess>
+            <QuicAccess key={data._id} data={data}></QuicAccess>
           ))}
         </div>
       </div>

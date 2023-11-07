@@ -5,6 +5,8 @@ import { useState } from "react";
 // import NavBar from "../shared/NavBar";
 import img from "../assets/login.webp";
 import GoogleLogin from "../components/GoogleLogin";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -37,9 +39,11 @@ const SignUp = () => {
       });
       console.log("User created");
       navigate("/");
+      toast.success("User created");
     } catch (error) {
       console.error("Error creating user", error.message);
       setAuthError(error.message);
+      toast.error(error.message);
     }
   };
   return (
@@ -109,6 +113,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
+      <ToastContainer position="bottom-right" autoClose={5000} />
     </div>
   );
 };

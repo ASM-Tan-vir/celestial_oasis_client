@@ -5,6 +5,8 @@ import { auth } from "../firebase/firebase.config";
 
 import img from "../assets/login.webp";
 import GoogleLogin from "../components/GoogleLogin";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignIn = () => {
   const [signInError, setSignInError] = useState("");
@@ -22,6 +24,8 @@ const SignIn = () => {
 
       console.log("User signed in");
 
+      toast.success("user signed in successfully");
+
       // const user = { email };
       // axios
       //   .post("http://localhost:5000/jwt", user, {
@@ -34,6 +38,7 @@ const SignIn = () => {
     } catch (error) {
       console.error("Error signing in", error.message);
       setSignInError(error.message);
+      toast.error(`Error signing in: ${error.message}`);
     }
   };
   return (
@@ -95,6 +100,7 @@ const SignIn = () => {
           </div>
         </div>
       </div>
+      <ToastContainer position="bottom-right" autoClose={5000} />
     </div>
   );
 };

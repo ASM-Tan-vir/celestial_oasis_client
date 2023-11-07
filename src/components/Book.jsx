@@ -2,6 +2,8 @@ import moment from "moment/moment";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useLoaderData } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Book = () => {
   const bookingData = useLoaderData();
@@ -9,7 +11,7 @@ const Book = () => {
   const { user } = useContext(AuthContext);
   const currentDate = moment().format(" Do MMM YY");
 
-  const handleBooking = (e) => {
+  const handleBooking = async (e) => {
     e.preventDefault();
 
     const form = e.target;
@@ -26,19 +28,28 @@ const Book = () => {
       price: price_per_night,
     };
 
-    console.log(booking);
-
-    fetch("http://localhost:5000/bookings", {
-      method: "post",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(booking),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
+    try {
+      // Make a POST request to book the service
+      const response = await fetch("http://localhost:5000/bookings", {
+        method: "post",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(booking),
       });
+
+      // Check if the request was successful
+      if (!response.ok) {
+        throw new Error("Error in booking. Please try again.");
+      }
+
+      // Show success toast
+      toast.success("Booked Successfully");
+    } catch (error) {
+      // Log and show error toast
+      console.error("Error during booking", error.message);
+      toast.error(error.message);
+    }
   };
 
   return (
@@ -111,6 +122,7 @@ const Book = () => {
           </div>
         </form>
       </div>
+      <ToastContainer position="bottom-right" autoClose={5000} />
     </div>
   );
 };
