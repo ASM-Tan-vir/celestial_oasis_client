@@ -1,9 +1,10 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const RoomsDetails = () => {
   const rooms = useLoaderData();
 
   const {
+    _id,
     description,
     image,
     room_type,
@@ -16,7 +17,7 @@ const RoomsDetails = () => {
   } = rooms;
   return (
     <div className="">
-      <div className="flex justify-between p-2  border-2 mx-10 lg:mx-20 my-4 rounded-lg text-2xl font-semibold text-[#4B0082] bg-white shadow-xl">
+      <div className="flex justify-between p-2  border-2 mx-10 lg:mx-20 my-4 rounded-lg lg:text-2xl font-semibold text-[#4B0082] bg-white shadow-xl">
         <div>
           <h2>Room Type:- {room_type}</h2>
         </div>
@@ -39,8 +40,8 @@ const RoomsDetails = () => {
         />
       </div>
 
-      <div className="flex items-center gap-5 mx-10 lg:mx-20 pt-4">
-        <div className="w-3/4   ">
+      <div className="md:flex  items-center gap-5 mx-10 lg:mx-20 pt-4">
+        <div className="w-3/4 flex flex-col justify-center mx-auto  ">
           <h2 className="text-center text-2xl font-semibold text-[#4B0082] mb-4">
             Rooms Preview
           </h2>
@@ -72,22 +73,32 @@ const RoomsDetails = () => {
             Users Reviews
           </h2>
           <div className="border-2 mt-2 px-4 py-2 rounded-lg">
-            <div>{reviews[0].user}</div>
+            <div>
+              <h2>Users Name:- {reviews[0].user}</h2>
+            </div>
             <div>
               <h2> Ratings:- {reviews[0].rating}</h2>
             </div>
-            <div>{reviews[0].comment}</div>
+            <div>
+              <h2>Comment:- {reviews[0].comment}</h2>
+            </div>
           </div>
           <div className="border-2 mt-2 px-4 py-2 rounded-lg">
-            <div>{reviews[1].user}</div>
-            <div>{reviews[1].rating}</div>
-            <div>{reviews[1].comment}</div>
+            <div>
+              <h2>Users Name:- {reviews[1].user}</h2>
+            </div>
+            <div>
+              <h2>Ratings:- {reviews[1].rating}</h2>
+            </div>
+            <div>
+              <h2>Comment:- {reviews[1].comment}</h2>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <div className="flex justify-center gap-10 mx-[20%] items-center">
-          <div className="border-2 px-10 py-4 rounded-lg bg-gradient-to-l from-[#ffc0cb] to-[#9370DB] hover:bg-white hover:text-[#4B0082]">
+        <div className="lg:flex  justify-center gap-10 mx-[20%] items-center">
+          <div className="border-2 px-10 py-4 my-4 rounded-lg bg-gradient-to-l from-[#ffc0cb] to-[#9370DB] hover:bg-white hover:text-[#4B0082]">
             <h2>Special Offers</h2>
             <h2>Offer Name:- {special_offers[0].offer_title}</h2>
             <h2> Discount:- {special_offers[0].discount_percentage}</h2>
@@ -99,9 +110,11 @@ const RoomsDetails = () => {
               {availability ? <h2>available</h2> : <h2>unavailable</h2>}
             </div>
             <div>
-              <button className="btn btn-block bg-gradient-to-l from-[#9370DB] to-[#ffc0cb] hover:bg-white hover:text-[#4B0082] mt-2">
-                Book Room
-              </button>
+              <Link to={`/book/${_id}`}>
+                <button className="btn btn-block bg-gradient-to-l from-[#9370DB] to-[#ffc0cb] hover:bg-white hover:text-[#4B0082] mt-2">
+                  Book Room
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,0 +1,16 @@
+/* Home.css */
+.keen-slider__slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Add additional styling as needed */
