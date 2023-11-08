@@ -1,26 +1,21 @@
-// // import React from 'react';
-// import GoogleMapReact from "google-map-react";
-// import { googleAPIKey } from "./googleApiKey";
-
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
+// import { MapContainer, TileLayer, useMap } from "react-leaflet";
 
 // const GoogleMap = () => {
-//   const defaultProps = {
-//     center: {
-//       lat: 10.99835602,
-//       lng: 77.01502627,
-//     },
-//     zoom: 11,
-//   };
 //   return (
-//     <div style={{ height: "100vh", width: "100%" }}>
-//       <GoogleMapReact
-//         bootstrapURLKeys={{ key: googleAPIKey }}
-//         defaultCenter={defaultProps.center}
-//         defaultZoom={defaultProps.zoom}
-//       >
-//         <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
-//       </GoogleMapReact>
+//     <div>
+//       render(
+//       <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+//         <TileLayer
+//           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+//           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+//         />
+//         <Marker position={position}>
+//           <Popup>
+//             A pretty CSS3 popup. <br /> Easily customizable.
+//           </Popup>
+//         </Marker>
+//       </MapContainer>
+//       , )
 //     </div>
 //   );
 // };

@@ -1,14 +1,19 @@
-const BookingRow = ({ booking }) => {
-  const { image, customerName, email, services, date, price } = booking;
+const BookingRow = ({ booking, handleDelete }) => {
+  const { _id, image, customerName, email, services, date, price } = booking;
   return (
-    <tr className=" ">
+    <tr className="  my-4">
       <th>
-        <button className="btn btn-ghost btn-xs">Cancel</button>
+        <button
+          onClick={() => handleDelete(_id)}
+          className="btn btn-ghost btn-xs"
+        >
+          Cancel
+        </button>
       </th>
       <td>
         <div className="flex items-center space-x-3">
           <div className="avatar">
-            <div className="mask mask-squircle w-12 h-12">
+            <div className="mask mask-circle w-12 h-12">
               <img src={image} />
             </div>
           </div>

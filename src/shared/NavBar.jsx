@@ -39,6 +39,15 @@ const NavBar = () => {
       <li>
         <Link
           className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
+          to="/about"
+        >
+          About Us
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          className="bg-white hover:bg-slate-50 text-[#4B0082] font-semibold mr-2"
           to="/sign_in"
         >
           Sign In

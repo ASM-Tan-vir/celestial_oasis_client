@@ -12,6 +12,7 @@ import { AuthContextProvider } from "./context/AuthContext";
 import RoomsDetails from "./pages/RoomsDetails";
 import Book from "./components/Book";
 import ErrorPAge from "./components/ErrorPAge";
+import AboutUs from "./pages/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,9 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: async () => {
-          const response = await fetch("http://localhost:5000/services");
+          const response = await fetch(
+            "https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app/services"
+          );
           const data = await response.json();
           return data;
         },
@@ -32,7 +35,9 @@ const router = createBrowserRouter([
         path: "/rooms",
         element: <Rooms></Rooms>,
         loader: async () => {
-          const response = await fetch("http://localhost:5000/services");
+          const response = await fetch(
+            "https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.apps/ervices"
+          );
           const data = await response.json();
           return data;
         },
@@ -48,23 +53,31 @@ const router = createBrowserRouter([
       {
         path: "/my_bookings",
         element: <MyBookings></MyBookings>,
-        loader: async () => {
-          const response = await fetch("http://localhost:5000/bookings");
-          const data = await response.json();
-          return data;
-        },
+        // loader: async () => {
+        //   const response = await fetch("https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app/bookings");
+        //   const data = await response.json();
+        //   return data;
+        // },
       },
       {
         path: "/rooms_details/:id",
         element: <RoomsDetails></RoomsDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.appservices/${params.id}`
+          ),
       },
       {
         path: "/book/:id",
         element: <Book></Book>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app${params.id}`
+          ),
+      },
+      {
+        path: "/about",
+        element: <AboutUs></AboutUs>,
       },
     ],
   },

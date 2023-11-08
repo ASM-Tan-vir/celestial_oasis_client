@@ -7,6 +7,7 @@ import img from "../assets/login.webp";
 import GoogleLogin from "../components/GoogleLogin";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import axios from "axios";
 
 const SignIn = () => {
   const [signInError, setSignInError] = useState("");
@@ -28,7 +29,7 @@ const SignIn = () => {
 
       // const user = { email };
       // axios
-      //   .post("http://localhost:5000/jwt", user, {
+      //   .post("https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app/jwt", user, {
       //     withCredentials: true,
       //   })
       //   .then((res) => {

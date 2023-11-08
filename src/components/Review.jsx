@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Comment = ({ user, comment }) => {
   const [showMore, setShowMore] = useState(false);

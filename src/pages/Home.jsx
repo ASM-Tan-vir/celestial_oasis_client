@@ -115,7 +115,7 @@ const Home = () => {
 
         {datas.length > 6 && (
           <button
-            className="bg-gradient-to-l from-[#9370DB] to-[#ffc0cb] hover:bg-gradient-to-r from-[#ffc0cb] to-[#8f65e3] transition duration-200 text-white flex mx-auto px-4 py-2 rounded-md mt-5"
+            className="bg-gradient-to-l from-[#9370DB] to-[#ffc0cb]  text-white flex mx-auto px-4 py-2 rounded-md mt-5"
             onClick={() => setShowAllReviews(!showAllReviews)}
           >
             {showAllReviews ? "Show less reviews" : "Show more reviews"}
