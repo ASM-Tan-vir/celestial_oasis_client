@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 - Welcome to Celestial Oasis Ltd.
 
 this is a simple hotel room booking website hare i have explain the working system and some basic information
@@ -37,4 +39,4 @@ At Celestial Oasis, we invite you to embark on a seamless and delightful journey
 
 - Transparent Pricing: We believe in transparency; our pricing is clear, with no hidden fees, providing you with a straightforward booking experience.
 
-Embark on a journey of comfort, luxury, and unparalleled service with Celestial Oasis Ltd. Your perfect stay is just a click away. Book now and let us elevate your travel experience.
+# Embark on a journey of comfort, luxury, and unparalleled service with Celestial Oasis Ltd. Your perfect stay is just a click away. Book now and let us elevate your travel experience.
