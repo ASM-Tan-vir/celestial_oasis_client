@@ -24,7 +24,9 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: async () => {
-          const response = await fetch("http://localhost:5000/services");
+          const response = await fetch(
+            "https://assignment-11-server-zeta-two.vercel.app/services"
+          );
           const data = await response.json();
           return data;
         },
@@ -33,7 +35,9 @@ const router = createBrowserRouter([
         path: "/rooms",
         element: <Rooms></Rooms>,
         loader: async () => {
-          const response = await fetch("http://localhost:5000/services");
+          const response = await fetch(
+            "https://assignment-11-server-zeta-two.vercel.app/services"
+          );
           const data = await response.json();
           return data;
         },
@@ -50,7 +54,7 @@ const router = createBrowserRouter([
         path: "/my_bookings",
         element: <MyBookings></MyBookings>,
         // loader: async () => {
-        //   const response = await fetch("http://localhost:5000/bookings");
+        //   const response = await fetch("https://assignment-11-server-zeta-two.vercel.app/bookings");
         //   const data = await response.json();
         //   return data;
         // },
@@ -59,13 +63,17 @@ const router = createBrowserRouter([
         path: "/rooms_details/:id",
         element: <RoomsDetails></RoomsDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://assignment-11-server-zeta-two.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "/book/:id",
         element: <Book></Book>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://assignment-11-server-zeta-two.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "/about",

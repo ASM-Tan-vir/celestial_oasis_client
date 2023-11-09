@@ -20,14 +20,14 @@ export const AuthContextProvider = ({ children }) => {
 
         if (currentUser) {
           const response = await axios.post(
-            "http://localhost:5000/jwt",
+            "https://assignment-11-server-zeta-two.vercel.app/jwt",
             loggedInUser,
             { withCredentials: true }
           );
           console.log(response.data);
         } else {
           const response = await axios.post(
-            "http://localhost:5000/logout",
+            "https://assignment-11-server-zeta-two.vercel.app/logout",
             loggedInUser,
             { withCredentials: true }
           );
