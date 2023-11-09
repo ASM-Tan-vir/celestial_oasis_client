@@ -6,9 +6,9 @@ this is a simple hotel room booking website hare i have explain the working syst
 
 At the first part of information I am taking about the building process of the application
 
-in this website I have used The java script framework library ( react js library ) Tailwind CSS library for styling, reat animation(react-spring) , react tost , and sweet alert etc.
+- in this website I have used The java script framework library ( react js library ) Tailwind CSS library for styling, reat animation(react-spring) , react tost , and sweet alert, react slider for slider , daygiUi tailwind component, etc.
 
-Welcome to Celestial Oasis Ltd.
+* user can SignIn/Login with Email and Password by Firebase Authentication.
 
 At Celestial Oasis, we invite you to embark on a seamless and delightful journey in the realm of luxury and comfort. Our hotel room booking website is designed to ensure a hassle-free experience, allowing you to reserve your ideal accommodation with ease.
 
