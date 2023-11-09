@@ -31,7 +31,7 @@ const Home = () => {
             </h2>
             <p className="text-sm font-semibold text-[#f9f6f9]">
               Celestial Oasis Ltd.: Where luxury harmonizes with tranquility.
-              Nestled in [location], our celestial retreat offers meticulously
+              Nestled in Coxs Bazar, our celestial retreat offers meticulously
               curated rooms, impeccable amenities, and personalized service.
             </p>
           </div>
@@ -45,7 +45,7 @@ const Home = () => {
             </h2>
             <p className="text-sm font-semibold text-[#f9f6f9]">
               Celestial Oasis Ltd.: Where luxury harmonizes with tranquility.
-              Nestled in [location], our celestial retreat offers meticulously
+              Nestled in Coxs Bazar, our celestial retreat offers meticulously
               curated rooms, impeccable amenities, and personalized service.
             </p>
           </div>
@@ -59,7 +59,7 @@ const Home = () => {
             </h2>
             <p className="text-sm font-semibold text-[#f9f6f9]">
               Celestial Oasis Ltd.: Where luxury harmonizes with tranquility.
-              Nestled in [location], our celestial retreat offers meticulously
+              Nestled in Coxs Bazar, our celestial retreat offers meticulously
               curated rooms, impeccable amenities, and personalized service.
             </p>
           </div>
@@ -73,7 +73,7 @@ const Home = () => {
             </h2>
             <p className="text-sm font-semibold text-[#f9f6f9]">
               Celestial Oasis Ltd.: Where luxury harmonizes with tranquility.
-              Nestled in [location], our celestial retreat offers meticulously
+              Nestled in Coxs Bazar, our celestial retreat offers meticulously
               curated rooms, impeccable amenities, and personalized service.
             </p>
           </div>
@@ -87,7 +87,7 @@ const Home = () => {
             </h2>
             <p className="text-sm font-semibold text-[#f9f6f9]">
               Celestial Oasis Ltd.: Where luxury harmonizes with tranquility.
-              Nestled in [location], our celestial retreat offers meticulously
+              Nestled in Coxs Bazar, our celestial retreat offers meticulously
               curated rooms, impeccable amenities, and personalized service.
             </p>
           </div>

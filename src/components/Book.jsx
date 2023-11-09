@@ -30,16 +30,13 @@ const Book = () => {
 
     try {
       // Make a POST request to book the service
-      const response = await fetch(
-        "https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app/bookings",
-        {
-          method: "post",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(booking),
-        }
-      );
+      const response = await fetch("http://localhost:5000/bookings", {
+        method: "post",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(booking),
+      });
 
       // Check if the request was successful
       if (!response.ok) {

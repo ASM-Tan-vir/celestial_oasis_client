@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 const MyBookings = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
-  const url = `https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app/bookings?email=${user?.email}`;
+  const url = `http://localhost:5000/bookings?email=${user?.email}`;
 
   useEffect(() => {
     axios.get(url, { withCredentials: true }).then((res) => {
@@ -26,12 +26,9 @@ const MyBookings = () => {
     }
 
     try {
-      const response = await fetch(
-        `https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app/bookings/${id}`,
-        {
-          method: "DELETE",
-        }
-      );
+      const response = await fetch(`http://localhost:5000/bookings/${id}`, {
+        method: "DELETE",
+      });
 
       toast.success("delate success.");
 

@@ -24,9 +24,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: async () => {
-          const response = await fetch(
-            "https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app/services"
-          );
+          const response = await fetch("http://localhost:5000/services");
           const data = await response.json();
           return data;
         },
@@ -35,9 +33,7 @@ const router = createBrowserRouter([
         path: "/rooms",
         element: <Rooms></Rooms>,
         loader: async () => {
-          const response = await fetch(
-            "https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.apps/ervices"
-          );
+          const response = await fetch("http://localhost:5000/services");
           const data = await response.json();
           return data;
         },
@@ -54,7 +50,7 @@ const router = createBrowserRouter([
         path: "/my_bookings",
         element: <MyBookings></MyBookings>,
         // loader: async () => {
-        //   const response = await fetch("https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app/bookings");
+        //   const response = await fetch("http://localhost:5000/bookings");
         //   const data = await response.json();
         //   return data;
         // },
@@ -63,17 +59,13 @@ const router = createBrowserRouter([
         path: "/rooms_details/:id",
         element: <RoomsDetails></RoomsDetails>,
         loader: ({ params }) =>
-          fetch(
-            `https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.appservices/${params.id}`
-          ),
+          fetch(`http://localhost:5000/services/${params.id}`),
       },
       {
         path: "/book/:id",
         element: <Book></Book>,
         loader: ({ params }) =>
-          fetch(
-            `https://assignment-11-server-71xezmt7g-tanvirs-projects.vercel.app${params.id}`
-          ),
+          fetch(`http://localhost:5000/services/${params.id}`),
       },
       {
         path: "/about",
